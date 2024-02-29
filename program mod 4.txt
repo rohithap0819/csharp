@@ -1,0 +1,24 @@
+using System;
+
+public class Divide
+{
+    public static void Main(string[] args)
+    {
+        try
+        {
+            Console.WriteLine("Enter the first number:");
+            int num = int.Parse(Console.ReadLine());
+
+            int result = 15 / num;
+            Console.WriteLine(result);
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        catch (FormatException e)
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+        }
+    }
+}

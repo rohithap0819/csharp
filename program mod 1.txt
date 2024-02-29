@@ -1,0 +1,26 @@
+using System;
+
+public class Arthematic
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a First Number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter a Second Number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
+        Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
+        Console.WriteLine("{0} x {1} = {2}", num1, num2, num1 * num2);
+        Console.WriteLine("{0} / {1} = {2}", num1, num2, (double)num1 / num2); // Outputs division result as decimal
+        Console.WriteLine("{0} mod {1} = {2}", num1, num2, num1 % num2);
+        
+        // Exponentiation
+        Console.WriteLine("{0} raised to the power of {1} = {2}", num1, num2, Math.Pow(num1, num2));
+        
+        // Square root
+        Console.WriteLine("Square root of {0} = {1}", num1, Math.Sqrt(num1));
+        Console.WriteLine("Square root of {0} = {1}", num2, Math.Sqrt(num2));
+    }
+}
